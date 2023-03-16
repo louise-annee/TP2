@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
@@ -36,8 +36,16 @@
     }
 
     /* Votre code CSS pour design par Grid ci-après */
+    @media screen and (min-width: 800px){
+      body {
+      display :grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
 
 
+    }
+    
 
 
 
@@ -46,10 +54,10 @@
 </head>
 <!-- NE PAS MODIFIER LE CODE CI-APRES -->
 <body>
-  <header>Header</header>
-  <article>Article</article>
-  <nav>Navigation</nav>
-  <aside>Aside</aside>
-  <footer>Footer</footer>
+  <header>Header</header> <!-- header est l'entête de page -->
+  <article>Article</article> <!-- article est une section, on peut en utiliser plusieurs -->
+  <nav>Navigation</nav> <!-- nav est une zone de navigation permettant l'indexation du site -->
+  <aside>Aside</aside> <!-- aside est du contenu secondaire, on peut y mettre un calendrier, les actualités etc. -->
+  <footer>Footer</footer> <!-- footer est le pied de page, on met généralement les coordonnées -->
 </body>
 </html>
